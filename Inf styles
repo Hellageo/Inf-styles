@@ -1,0 +1,38 @@
+local DrRayLibrary =
+
+loadstring(game: HttpGet("https://raw.githu busercontent.com/AZYsGithub/DrRay-UI- Library/main/DrRay.lua"))()
+
+local window DrRayLibrary: Load("Inf Spins Script", "Default")
+
+local tab DrRayLibrary.newTab("Auto- Roll", "ImageIdHere")
+
+tab.newButton("Auto-Roll Shidou", "Auto- Rolls Until You Get Shidou!", function() local desiredStyle = "Shidou" local enabled true -- false disabled
+
+while enabled do task.wait(0.5)
+
+local player =
+
+game: GetService("Players").LocalPlayer if
+
+player: FindFirstChild("PlayerStats") and player.PlayerStats: FindFirstChild("Style") then
+
+local currentStyle = player. PlayerStats.Style.Value if currentStyle desiredStyle Fire the server to spin then until the desired style is obtained
+
+game: GetService("ReplicatedStorage"). Packa ges. Knit.Services. StyleService.RE.Spin: Fir eServer()
+
+else
+
+Stop spinning since the desired style is obtained task.wait(1) Small delay to
+
+avoid constant checks
+
+end
+
+end
+
+
+
+
+Optimize the notification
+
+local loadTime tick() startTime StarterGui:SetCore("SendNotification", { Title = "Inf Spins Script", Text = "Script loaded in: string.format("%.2f", loadTime).. seconds.", Duration 5, performance }) Reduce duration for
